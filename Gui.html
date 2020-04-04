@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GUI Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+
+<link href="./main.css" rel="stylesheet"></head>
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div>
+                    <figure >
+                        <img src="logo.png" alt="Prateek Kaitha" title="PrateeK Kaistha" width="80%">
+                    </figure>
+                    
+                </div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-database"> </i>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-edit"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        </div>
+                <div class="app-header-right">
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">   
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        Prateek Kaistha
+                                    </div>
+                                    <div class="widget-subheading">
+                                        FOUNDER and CEO
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>        </div>
+            </div>
+        </div>        
+         
+         <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="app-sidebar__heading">Dashboards</li>
+                                <li>
+                                    <a href="index.html" class="mm-active">
+                                        <i class="metismenu-icon pe-7s-rocket"></i>
+                                        Home...
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Paradigms</li>
+                                
+                                <li  >
+                                    <a href="Structural.html">
+                                            <i class="metismenu-icon pe-7s-gym">
+                                            </i>Structural
+                                        </a>
+                                </li>
+                                <li  >
+                                        <a href="Procedural.html">
+                                                <i class="metismenu-icon pe-7s-display2">
+                                                </i>Procedural
+                                            </a>
+                                    </li>  
+                                    <li  >
+                                        <a href="Object.html">
+                                                <i class="metismenu-icon pe-7s-plugin">
+                                                </i>Object Oriented
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Event.html">
+                                                <i class="metismenu-icon pe-7s-next-2">
+                                                </i>Event Driven
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Declarative.html">
+                                                <i class="metismenu-icon pe-7s-album">
+                                                </i>Declarative
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Imperative.html">
+                                                <i class="metismenu-icon pe-7s-leaf">
+                                                </i>Imperative
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Parallel.html">
+                                                <i class="metismenu-icon pe-7s-switch">
+                                                </i>Parallel
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Concurrent.html">
+                                                <i class="metismenu-icon pe-7s-vector">
+                                                </i>Concurrent
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Functional.html">
+                                                <i class="metismenu-icon pe-7s-eyedropper">
+                                                </i>Functional
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Logic.html">
+                                                <i class="metismenu-icon pe-7s-diamond">
+                                                </i>Logic
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Dependent.html">
+                                                <i class="metismenu-icon pe-7s-bandaid">
+                                                </i>Dependent
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Network.html">
+                                                <i class="metismenu-icon pe-7s-bluetooth">
+                                                </i>Network
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Symbolic.html">
+                                                <i class="metismenu-icon pe-7s-magic-wand">
+                                                </i>Symbolic
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Automata.html">
+                                                <i class="metismenu-icon pe-7s-map-2">
+                                                </i>Automata
+                                            </a>
+                                    </li> 
+                                    <li  >
+                                        <a href="Gui.html">
+                                                <i class="metismenu-icon pe-7s-paint">
+                                                </i>GUI
+                                            </a>
+                                    </li> 
+                                <li class="app-sidebar__heading">Feedback</li>
+                                <li>
+                                    <a href="FeedBack.html">
+                                        <i class="metismenu-icon pe-7s-mouse">
+                                        </i>Give Feedback
+                                    </a>
+                                </li>
+                                
+                                <li class="app-sidebar__heading">Learn More</li>
+                                <li>
+                                    <a href="https://en.wikipedia.org/wiki/Wiki" target="_blank">
+                                        <i class="metismenu-icon pe-7s-graph2">
+                                        </i>
+                                        Wikipedia
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="app-main__outer">
+                  
+                        <div class="app-main__inner">
+                                <div class="app-page-title">
+                                    <div class="page-title-wrapper">
+                                        <div class="page-title-heading">
+                                            <div class="page-title-icon">
+                                                <i class="pe-7s-radio icon-gradient bg-strong-bliss">
+                                                </i>
+                                            </div>
+                                            <div>GUI Programming Paradigms......
+                                                <div class="page-title-subheading">Learn about procedural programming paradigm.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>            <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body"><h5 class="card-title">GUI Programming Approach </h5>
+                                                <div class="scroll-area-md">
+                                                    <div class="scrollbar-container ps--active-y">
+                                                    <p>
+                                                        The graphical user interface (GUI /ˈdʒiːjuːaɪ/ gee-you-eye[1][Note 1] or /ˈɡuːi/[2]) is a form of user interface that allows users to interact with electronic devices through graphical icons and audio indicator such as primary notation, instead of text-based user interfaces, typed command labels or text navigation. GUIs were introduced in reaction to the perceived steep learning curve of command-line interfaces (CLIs),[3][4][5] which require commands to be typed on a computer keyboard.
+                                                    </p>
+                                                    <p>
+                                                        The actions in a GUI are usually performed through direct manipulation of the graphical elements.[6][7][8] Beyond computers, GUIs are used in many handheld mobile devices such as MP3 players, portable media players, gaming devices, smartphones and smaller household, office and industrial controls. The term GUI tends not to be applied to other lower-display resolution types of interfaces, such as video games (where head-up display (HUD)[9] is preferred), or not including flat screens, like volumetric displays[10] because the term is restricted to the scope of two-dimensional display screens able to describe generic information, in the tradition of the computer science research at the Xerox Palo Alto Research Center.
+                                                    </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="main-card mb-3 card">
+                                                <div class="card-body"><h5 class="card-title">User interface and interaction design </h5>
+                                                    <div class="scroll-area-md">
+                                                        <div class="scrollbar-container ps--active-y">
+                                                            <p>
+                                                                    Designing the visual composition and temporal behavior of a GUI is an important part of software application programming in the area of human–computer interaction. Its goal is to enhance the efficiency and ease of use for the underlying logical design of a stored program, a design discipline named usability. Methods of user-centered design are used to ensure that the visual language introduced in the design is well-tailored to the tasks.
+                                                            </p>
+                                                            <p>
+                                                                    The visible graphical interface features of an application are sometimes referred to as chrome or GUI (pronounced gooey).[11][12] Typically, users interact with information by manipulating visual widgets that allow for interactions appropriate to the kind of data they hold. The widgets of a well-designed interface are selected to support the actions necessary to achieve the goals of users. A model–view–controller allows flexible structures in which the interface is independent from and indirectly linked to application functions, so the GUI can be customized easily. This allows users to select or design a different skin at will, and eases the designer's work to change the interface as user needs evolve. Good user interface design relates to users more, and to system architecture less. Large widgets, such as windows, usually provide a frame or container for the main presentation content such as a web page, email message or drawing. Smaller ones usually act as a user-input tool.
+                                                            </p>
+                                                            <p>
+                                                                    A GUI may be designed for the requirements of a vertical market as application-specific graphical user interfaces. Examples include automated teller machines (ATM), point of sale (POS) touchscreens at restaurants,[13] self-service checkouts used in a retail store, airline self-ticketing and check-in, information kiosks in a public space, like a train station or a museum, and monitors or control screens in an embedded industrial application which employ a real-time operating system (RTOS).
+                                                            </p>
+                                                            <p>
+                                                                    By the 1980s, cell phones and handheld game systems also employed application specific touchscreen GUIs. Newer automobiles use GUIs in their navigation systems and multimedia centers, or navigation multimedia center combinations.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="main-card mb-3 card">
+                                            <div class="card-body"><h5 class="card-title">Components</h5>
+                                                <div class="scroll-area-sm">
+                                                    <div class="scrollbar-container ps--active-y">
+                                                         <p>
+                                                                A GUI uses a combination of technologies and devices to provide a platform that users can interact with, for the tasks of gathering and producing information.
+                                                         </p>
+                                                         <p>
+                                                                A series of elements conforming a visual language have evolved to represent information stored in computers. This makes it easier for people with few computer skills to work with and use computer software. The most common combination of such elements in GUIs is the windows, icons, menus, pointer (WIMP) paradigm, especially in personal computers.
+                                                         </p>
+                                                         <p>
+                                                                The WIMP style of interaction uses a virtual input device to represent the position of a pointing device's interface , most often a mouse, and presents information organized in windows and represented with icons. Available commands are compiled together in menus, and actions are performed making gestures with the pointing device. A window manager facilitates the interactions between windows, applications, and the windowing system. The windowing system handles hardware devices such as pointing devices, graphics hardware, and positioning of the pointer.
+                                                         </p>
+                                                         <p>
+                                                                In personal computers, all these elements are modeled through a desktop metaphor to produce a simulation called a desktop environment in which the display represents a desktop, on which documents and folders of documents can be placed. Window managers and other software combine to simulate the desktop environment with varying degrees of realism.
+                                                         </p>
+
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+        
+        
+                                        <div class="main-card mb-3 card">
+                                                <div class="card-body"><h5 class="card-title"> Network Programming Paradigm</h5>
+                                                    <div class="scroll-area-la>
+                                                        <div class="scrollbar-container ps--active-y"> 
+                                                           <figure>
+                                                               <img src="networkDiagram.png" width="100%">
+                                                           </figure>
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                            </div>
+        
+                                        <div class="main-card mb-3 card">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+        
+                    <div class="app-wrapper-footer">
+                        <div class="app-footer">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-left">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="https://www.google.com/search?q=Prateek+Kaistha&oq=Prateek+Kaistha&aqs=chrome..69i57j69i60j69i61.5707j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="nav-link">
+                                                Prateek Kaistha
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                RA1811028010047
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="app-footer-right">
+                                    <ul class="nav">
+                                        
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                <div class="badge badge-success mr-1 ml-0">
+                                                    <small>GIT HUB</small>
+                                                </div>
+                                               
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    </div>
+               
+        </div>
+    </div>
+<script type="text/javascript" src="./assets/scripts/main.js"></script></body>
+</html>
